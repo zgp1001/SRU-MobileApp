@@ -1,0 +1,11 @@
+9-22-14
+
+-subsequent meeting notes will be posted in this folder.
+
+-We will be using the IonicFramework to develop app
+	*Side menu format (w/ hamburger button/menu)
+
+-Marc Sensenich appointed project manager
+	*in charge of e-mailing/delegating tasks
+
+-Next meeting will likely be wed Oct 1st 4PM (CTC meeting)
