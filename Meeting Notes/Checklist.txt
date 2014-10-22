@@ -1,0 +1,32 @@
+General ideas to be implemented.  May be made into issues/tasks at the discretion of whoever is in charge.
+
+
+
+Stage 0: Static Elements and Basics
+
+*****to be finished before pitching to SGA*****
+
+	- safety pdf's
+	- bus schedule / link to happy bus site
+	- points of interest
+	- food service/ building hours
+	- feedback/suggestions
+
+
+Stage 1: Complex, but very useful elements
+
+*****completed by first update, preferably release*****
+
+	- interactive map
+	- rockpride/top of the rock information
+	- SGA movie series
+	- weather
+	- Rocket feed
+	- Sports/club schedules
+	- professor contact directory
+
+
+Stage 2: If/When we get around to it
+
+	- events schedule
+	- boozel menu
