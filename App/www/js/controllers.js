@@ -33,8 +33,21 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('HomeCtrl', function($scope) {
+.controller('BusCtrl',function($scope){
+  
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('InterestCtrl',function($scope){
+
+})
+
+.controller('SafetyCtrl',function($scope){
+
+})
+.controller('DiningCtrl',function($scope){
+
+})
+
+.controller('HomeCtrl', function($scope) {
+
 });

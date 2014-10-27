@@ -30,20 +30,39 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       controller: 'AppCtrl'
     })
 
-    .state('app.search', {
-      url: "/search",
+    .state('app.dining', {
+      url: "/dining",
       views: {
         'menuContent' :{
-          templateUrl: "templates/search.html"
+          templateUrl: "templates/dining.html",
+          controller: 'DiningCtrl'
         }
       }
     })
-
-    .state('app.browse', {
-      url: "/browse",
+    .state('app.interest', {
+      url: "/interest",
       views: {
         'menuContent' :{
-          templateUrl: "templates/browse.html"
+          templateUrl: "templates/interest.html",
+          controller: 'InterestCtrl'
+        }
+      }
+    })
+    .state('app.safety', {
+      url: "/safety",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/safety.html",
+          controller: 'SafetyCtrl'
+        }
+      }
+    })
+    .state('app.bus', {
+      url: "/bus",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/bus.html",
+          controller: 'BusCtrl'
         }
       }
     })
@@ -53,17 +72,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         'menuContent' :{
           templateUrl: "templates/home.html",
           controller: 'HomeCtrl'
-        }
-      }
-    })
-
-    .state('app.single', {
-      //url: "/playlists/:playlistId",
-      url: "./templates/pages/bus.html",
-      views: {
-        'menuContent' :{
-          templateUrl: "templates/playlist.html",
-          controller: 'PlaylistCtrl'
         }
       }
     });
