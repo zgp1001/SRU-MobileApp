@@ -39,12 +39,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-    .state('app.interest', {
-      url: "/interest",
+    .state('app.contact', {
+      url: "/contact",
       views: {
         'menuContent' :{
-          templateUrl: "templates/interest.html",
-          controller: 'InterestCtrl'
+          templateUrl: "templates/contact.html",
+          controller: 'ContactCtrl'
         }
       }
     })

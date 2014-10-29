@@ -37,7 +37,7 @@ angular.module('starter.controllers', [])
   
 })
 
-.controller('InterestCtrl',function($scope){
+.controller('ContactCtrl',function($scope){
 
 })
 
