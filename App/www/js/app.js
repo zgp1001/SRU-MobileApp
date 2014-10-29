@@ -57,6 +57,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+	.state('app.APConcern', {
+      url: "/APConcern",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/safety/APConcern.html",
+		  //Not making controllers for any of these yet as they don't do anything
+          controller: 'SafetyCtrl'
+        }
+      }
+    })
     .state('app.bus', {
       url: "/bus",
       views: {
