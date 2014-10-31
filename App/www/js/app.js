@@ -62,8 +62,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'menuContent' :{
           templateUrl: "templates/safety/APConcern.html",
-		  //Not making controllers for any of these yet as they don't do anything
-          controller: 'SafetyCtrl'
         }
       }
     })

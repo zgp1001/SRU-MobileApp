@@ -42,7 +42,13 @@ angular.module('starter.controllers', [])
 })
 
 .controller('SafetyCtrl',function($scope){
-
+	$scope.safetyItems = [
+		{itemName: "Academic Performance Concern", itemState: "/app/APConcern"},
+		{itemName: "Angry Person", itemState: "/app/safety"},
+		{itemName: "Behaviors of Concern", itemState: "/app/safety"},
+		{itemName: "Communication Tips", itemState: "/app/safety"},
+		{itemName: "Referral Sources/Consultants", itemState: "/app/safety"}
+	];
 })
 .controller('DiningCtrl',function($scope){
 
