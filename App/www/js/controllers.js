@@ -31,16 +31,16 @@ angular.module('starter.controllers', [])
 .controller('SafetyCtrl',function($scope){
 	$scope.safetyItems = [
 		{itemName: "Academic Performance Concern", itemState: "/app/APConcern"},
-		{itemName: "Angry Person", itemState: "/app/safety"},
-		{itemName: "Behaviors of Concern", itemState: "/app/safety"},
-		{itemName: "Communication Tips", itemState: "/app/safety"},
+		{itemName: "Angry Person", itemState: "/app/AngryPerson"},
+		{itemName: "Behaviors of Concern", itemState: "/app/ConcerningBehaviour"},
+		{itemName: "Communication Tips", itemState: "/app/CommunicationTips"},
 		{itemName: "Referral Sources/Consultants", itemState: "/app/safety"},
 		{itemName: "De-Escalation Skills", itemState: "/app/safety"},
 		{itemName: "Disruptive Student", itemState: "/app/safety"},
 		{itemName: "Emotional Crisis", itemState: "/app/safety"},
 		{itemName: "Helpful Comments", itemState: "/app/safety"},
 		{itemName: "Financially Troubled", itemState: "/app/safety"},
-		{itemName: "How to make a student conduct referral", itemState: "/app/safety"},
+		{itemName: "How to make a student conduct referral", itemState: "/app/ConductReferralHowTo"},
 		{itemName: "Medical Emergency", itemState: "/app/safety"},
 		{itemName: "Mental Health Emergency", itemState: "/app/safety"},
 		{itemName: "Physical Signs of Concern", itemState: "/app/safety"},
@@ -53,7 +53,7 @@ angular.module('starter.controllers', [])
 		{itemName: "Victim/Survivor Assistance", itemState: "/app/safety"},
 		{itemName: "Violent Person", itemState: "/app/safety"},
 		{itemName: "Websites", itemState: "/app/safety"},
-		{itemName: "BIT Membership", itemState: "/app/safety"}
+		{itemName: "BIT Membership", itemState: "/app/BitMembership"}
 	];
 })
 .controller('DiningCtrl',function($scope){

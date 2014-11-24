@@ -57,14 +57,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-	.state('app.APConcern', {
-      url: "/APConcern",
-      views: {
-        'menuContent' :{
-          templateUrl: "templates/safety/APConcern.html",
-        }
-      }
-    })
     .state('app.bus', {
       url: "/bus",
       views: {
@@ -91,7 +83,58 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           controller: 'HomeCtrl'
         }
       }
-    });
+    })
+	
+	// all safety sub-states
+	
+	.state('app.APConcern', {
+      url: "/APConcern",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/safety/APConcern.html",
+        }
+      }
+    })
+	.state('app.AngryPerson', {
+      url: "/AngryPerson",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/safety/AngryPerson.html",
+        }
+      }
+    })
+	.state('app.BitMembership', {
+      url: "/BitMembership",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/safety/BitMembership.html",
+        }
+      }
+    })
+	.state('app.CommunicationTips', {
+      url: "/CommunicationTips",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/safety/CommunicationTips.html",
+        }
+      }
+    })
+	.state('app.ConcerningBehaviour', {
+      url: "/ConcerningBehaviour",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/safety/ConcerningBehaviour.html",
+        }
+      }
+    })
+	.state('app.ConductReferralHowTo', {
+      url: "/ConductReferralHowTo",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/safety/ConductReferralHowTo.html",
+        }
+      }
+	  });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/home');
 });
