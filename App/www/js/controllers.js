@@ -23,14 +23,15 @@ angular.module('starter.controllers', [])
 
 	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-	navigator.geolocation.getCurrentPosition(function(pos) {
+	//this gets current location but i think we want sru location
+	/*navigator.geolocation.getCurrentPosition(function(pos) {
 	    map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
 	    var myLocation = new google.maps.Marker({
 	        position: new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude),
 	        map: map,
 	        title: "My Location"
 	    });
-	});
+	});*/
 
 	$scope.map = map;
 })
@@ -63,8 +64,23 @@ angular.module('starter.controllers', [])
 		{itemName: "BIT Membership", itemState: "/app/BitMembership"}
 	];
 })
+//Sunday:"9:00Am - 8:00Pm", Monday:"7:00Am - 8:00Pm", Tuesday:"7:00Am - 8:00Pm", Wednesday:"7:00Am - 8:00Pm", Thursday:"7:00Am - 8:00Pm", Friday:"7:00Am - 7:00Pm", Saturday:"9:00Am - 7:00Pm"
 .controller('DiningCtrl',function($scope){
-
+	$scope.onCampus = [
+		{placeName: "Boozel", Sunday: "9:00am-8:00pm", Monday: "7:00am-8:00pm", Tuesday:"7:00am-8:00pm", Wednesday:"7:00am-8:00pm", Thursday:"7:00-8:00pm", Friday:"7:00am-7:00pm", Saturday:"9:00am-7:00pm" },
+		{placeName: "Rocky's", Sunday: "7:00am-8:00pm", Monday: "7:00am-8:00pm", Tuesday:"7:00am-8:00pm", Wednesday:"7:00am-8:00pm", Thursday:"7:00-8:00pm", Friday:"7:00am-7:00pm", Saturday:"9:00am-7:00pm"},
+		{placeName: "WeisenFluh", Sunday: "7:00am-8:00pm", Monday: "7:00am-8:00pm", Tuesday:"7:00am-8:00pm", Wednesday:"7:00am-8:00pm", Thursday:"7:00-8:00pm", Friday:"7:00am-7:00pm", Saturday:"9:00am-7:00pm"},
+		{placeName: "Library", Sunday: "7:00am-8:00pm", Monday: "7:00am-8:00pm", Tuesday:"7:00am-8:00pm", Wednesday:"7:00am-8:00pm", Thursday:"7:00-8:00pm", Friday:"7:00am-7:00pm", Saturday:"9:00am-7:00pm"},
+		{placeName: "Cart" , Sunday: "7:00am-8:00pm", Monday: "7:00am-8:00pm", Tuesday:"7:00am-8:00pm", Wednesday:"7:00am-8:00pm", Thursday:"7:00-8:00pm", Friday:"7:00am-7:00pm", Saturday:"9:00am-7:00pm"}
+	];
+	
+	$scope.offCampus = [
+		{placeName: "North Country Brewing", Hours: "N/A"},
+		{placeName: "Ginger Hill", Hours: "N/A"},
+		{placeName: "Camelot", Hours: "N/A"},
+		{placeName: "Sheetz", Hours: "N/A"},
+		{placeName: "McDonalds", Hours: "N/A"}
+	];
 })
 
 .controller('HomeCtrl', function($scope) {

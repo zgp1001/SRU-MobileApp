@@ -84,7 +84,25 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-	
+	//ding sub-states
+	.state('app.onCampusDining', {
+      url: "/dining/onCampusDining",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/dining/onCampus.html",
+		  controller: 'DiningCtrl'
+        }
+      }
+    })
+	.state('app.offCampusDining', {
+      url: "/dining/offCampusDining",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/dining/offCampus.html",
+		  controller: 'DiningCtrl'
+        }
+      }
+    })
 	// all safety sub-states
 	
 	.state('app.APConcern', {
